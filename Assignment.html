@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+     <style>
+         * {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */ /* Cover the entire element */
+} 
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("night.jfif"); /* Background with gradient and image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Cover the entire body */
+}
+
+header {
+    width: 100%; /* Full width */
+    height: 10vh; /* Height based on viewport height */
+    font-family: sans-serif; /* Font family */
+}
+
+nav {
+    width: 100%; /* Full width */
+    height: 100px; /* Fixed height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 2em; /* Font size for logo */
+    letter-spacing: 2px; /* Space between letters */
+    color: white; /* Text color */
+}
+
+.menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    padding: 8px 20px; /* Padding around link */
+    font-size: 20px; /* Font size for links */
+    position: relative; /* Positioning for pseudo-element */
+}
+
+.menu a::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 0%; /* Initial width for hover effect */
+    height: 100%; /* Full height */
+    border-bottom: 2px solid indianred; /* Bottom border for hover effect */
+}
+
+.menu a:hover::before {
+    width: 70%; /* Expand on hover */
+}
+
+.register a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    padding: 10px 20px; /* Padding around link */
+    font-size: 20px; /* Font size for register link */
+    background-color: rgb(248, 111, 61); /* Background color */
+    border-radius: 15px; /* Rounded corners */
+    transition: 0.4s; /* Smooth transition for hover effect */
+}
+
+.register a:hover {
+    background: transparent; /* Change background on hover */
+    border: 1px solid indianred; /* Add border on hover */
+}
+
+.h-txt {
+    max-width: 650px; /* Maximum width for text container */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+}
+
+.h-txt span {
+    letter-spacing: 5px; /* Space between letters */
+}
+
+.h-txt h1 {
+    font-size: 3.5em; /* Font size for heading */
+}
+
+.h-txt a {
+    text-decoration: none; /* Remove underline from links */
+    background: indianred; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around link */
+    letter-spacing: 5px; /* Space between letters */
+    transition: 0.5s; /* Smooth transition for hover effect */
+}
+
+.h-txt a:hover {
+    background: transparent; /* Change background on hover */
+    border: 1px solid indianred; /* Add border on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 300px) {
+    .h-txt h1 {
+        font-size: 3.5em; /* Maintain heading size on small screens */
+    }
+}
+
+     </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">Travel</div>
+        <div class="menu">
+              <a href="#">Home</a>
+              <a href="#">Hill Station</a>
+              <a href="$">Offers</a>
+              <a href="#">Contact</a>
+        </div>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
+    </nav>
+    <section class="h-txt">
+        <span>Enjoy</span>
+        <h1>International Travel Agency</h1>
+
+        <br>
+        <a href="#">Book your Trip</a>
+    </section>
+    </header>
+</body>
+</html>
